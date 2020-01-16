@@ -1,7 +1,7 @@
 import { Platform } from 'react-native';
 import {
     createStore,
-    applyMiddleWare,
+    applyMiddleware,
     compose
 } from 'redux';
 import devTools from 'remote-redux-devtools';
@@ -12,9 +12,9 @@ import logger from 'redux-logger';
 // have to write reducer functions.
 import RootReducer from './Reducers';
 
-const middleware = applyMiddleWare(thunk, promise, logger);
+const middleware = applyMiddleware(thunk, promise, logger);
 
-const store = createStore(
+const Store = createStore(
 
     RootReducer,
     compose(
