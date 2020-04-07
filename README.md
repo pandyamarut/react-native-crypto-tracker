@@ -1,2 +1,2 @@
 # react-native-crypto-tracker
-Crypto currency tracker [WIP]
+Crypto currency tracker
